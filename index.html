@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bogdan Ciui's Portofolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo"> <b>Bogdan<br>Ciui</b> <span class="highlight">&lt;/&gt;</span>
+        </div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo"><b>Bogdan</b><br><b>Ciui</b>         &lt;/&gt;</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+<section id="profile">
+    <div class="section__pic-container">
+        <img src="./assets/diploma-1.jpg" alt="Bogdan Ciui profile picture" />
+    </div>
+    <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Bogdan Ciui</h1>
+        <p class="section__text__p2">Frontend Enthusiast</p>
+        <div calss="btn-container">
+            <button class="btn btn-color-1"
+             onclick="window.open('./assets/resume-example.pdf')">Download CV</button>
+            <button class="btn btn-color-2"
+             onclick="location.href='./#contact'">Contact Info</button>
+        </div>
+        <div id="social-container">
+            <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/bogdan-cristian-ciui-801643258/'" />
+            <img src="./assets/github.png" alt="My GitHub profile" class="icon" onclick="location.href='https://github.com/bogdanciui18/'" />
+        </div>
+    </div>
+</section>
+<section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title about-title">About Me</h1>
+    <div class="section-container">
+        <div class="section__pic-container">
+           <img src="./assets/about-pic.png" alt="Profile Picture" class="about-pic" />
+        </div>
+        <div class="about-details-container">
+            <div class="about-container">
+                <div class="details-container">
+                    <img src="./assets/experience.png" alt="experience icon" class="icon" />
+                    <h3>Experience</h3>
+                    <p>At present, I do not have any previous work experience, but I am highly 
+                        motivated and eager to kickstart my career in this field. I am willing to 
+                        learn quickly and make a meaningful contribution to your team with 
+                        enthusiasm and professionalism.</p>
+                </div>
+                <div class="details-container">
+                    <img src="./assets/education.png" alt="education icon" class="icon" />
+                    <h3>Education</h3>
+                    <p><b>High School Diploma :Mathematics-Informatics </b>
+                        <br>Sep 2018 - Jun 2022
+                        Ioan Jebelean Theoretical High School, Sannicolau Mare , TM<br>
+                       <b> Bachelor's Degree : Information Technology 
+                        (IT)</b>
+                        <br>Sep 2022 - Present
+                        Politehnica University Timisoara, Timisoara , TM
+                       <br><i> I am currently in my second year of studies at the Faculty of IT, and I 
+                        am expected to graduate in 2025.</i></p>
+                </div>
+            </div>
+            <div calss="text-container">
+                <p class="aboutme">I am a dynamic and enthusiastic individual with a strong passion for 
+                    technology and programming. I possess remarkable abilities to learn 
+                    quickly and adapt to new and challenging situations, making me a 
+                    valuable member of any team. I enjoy working with people and 
+                    contributing my skills to innovative and complex projects.</p>
+            </div>
+        </div>
+    </div>
+    <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+</section>
+    <script src="script.js"></script>
+</body>
+</html>
